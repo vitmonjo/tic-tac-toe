@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Atma', cursive;
+}
+
+body {
+    height: 100vh;
+    background-color: #ec729c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.game-title {
+    font-size: 3.5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #ffffff;
+}
+
+.game-container {
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: #f4aeba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 450px;
+    width: 450px;
+    background-image: url(grid.jpg);
+    background-size: cover;
+    font-size: 5.5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.options {
+    width: 320px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f4aeba;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+label {
+    font-size: 1.2rem;
+    line-height: 38px;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 5px;
+    font-size: 1.0rem;
+}
+
+.restart, .start {
+    border-radius: 10px;
+    background-color: #eeeeee;
+    font-weight: 500;
+    font-size: 1.0rem;
+}
